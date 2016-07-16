@@ -12,10 +12,7 @@ public class Window extends JFrame {
     public Window() {
 
         setLayout(new GridLayout(2,3));
-
-
-
-
+        
     }
 
 }

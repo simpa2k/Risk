@@ -1,4 +1,5 @@
 package location;
+
 import java.util.HashSet;
 
 /**
@@ -11,7 +12,7 @@ public class LocationModel {
     private String name;
     private HashSet<LocationModel> neighbours = new HashSet<>();
 
-    public LocationModel(LocationView view, String name) {
+    public LocationModel(String name) {
         this.view = view;
         this.name = name;
     }
@@ -23,6 +24,5 @@ public class LocationModel {
     public String getName() {
         return name;
     }
-
 
 }

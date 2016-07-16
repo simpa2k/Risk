@@ -1,5 +1,6 @@
 package engine;
 
+import java.awt.Color;
 import location.LocationModel;
 import location.LocationView;
 import player.Player;
@@ -24,8 +25,8 @@ public class Engine {
         ArrayList<LocationView> locationViews = new ArrayList<>();
 
         for(int i = 0; i < locationNames.length; i++) {
-            LocationView locationView = new LocationView();
-            LocationModel locationModel = new LocationModel(locationView, locationNames[i]);
+            LocationModel locationModel = new LocationModel(locationNames[i]);
+            LocationView locationView = new LocationView(Color.BLACK, locationModel);
             locationViews.add(locationView);
         }
 
