@@ -1,6 +1,5 @@
 package location;
 
-<<<<<<< HEAD
 import java.util.HashSet;
 
 /**
@@ -24,9 +23,4 @@ public class LocationModel {
     public String getName() {
         return name;
     }
-
-=======
-
-public class LocationModel {
->>>>>>> Robert
 }
