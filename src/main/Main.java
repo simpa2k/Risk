@@ -1,3 +1,7 @@
+package main;
+
+import window.Window;
+
 /**
  * Created by simpa2k on 2016-07-16.
  */
