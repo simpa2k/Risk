@@ -14,7 +14,7 @@ import java.util.Map;
 
 public class Player {
 
-    private Color colour;
+    private Color color;
     public static Map<String, GamePieceModel> gamePieces = new HashMap<String, GamePieceModel>();
 
 }

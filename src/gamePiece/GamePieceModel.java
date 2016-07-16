@@ -1,6 +1,6 @@
 package gamePiece;
 
-import location.Location;
+import location.LocationModel;
 import player.Player;
 
 /**
@@ -11,9 +11,9 @@ public class GamePieceModel {
     private GamePieceType gamePieceType;
     private int amount;
     private Player player;
-    private Location location;
+    private LocationModel locationModel;
 
-    public GamePieceModel(int amount, Player player, Location location){
+    public GamePieceModel(int amount, Player player, LocationModel locationModel){
 
     }
 
@@ -29,16 +29,16 @@ public class GamePieceModel {
         return player;
     }
 
-    public Location getLocation() {
-        return location;
+    public LocationModel getLocationModel() {
+        return locationModel;
     }
 
     public void setPlayer(Player player) {
         this.player = player;
     }
 
-    public void setLocation(Location location) {
-        this.location = location;
+    public void setLocationModel(LocationModel locationModel) {
+        this.locationModel = locationModel;
     }
 
 
