@@ -24,14 +24,20 @@ public class Turn {
         int amountOfArmiesReceived = amountOfHeldLocations / 3 <= 8 ? 3 : amountOfHeldLocations / 3;
 
         player.increaseArmiesLeftToPlace(amountOfArmiesReceived);
+        player.placeTroops();
     }
 
     private void combat() {
+        Player attackedPlayer = player.attack();
+
+        if(attackedPlayer != null) {
+            //resolve combat
+        }
 
     }
 
     private void troopMovements() {
-
+        player.moveTroops();
     }
 
     private void end() {
