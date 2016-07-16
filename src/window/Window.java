@@ -15,8 +15,6 @@ public class Window extends JFrame {
 
         setLayout(new GridLayout(2,3));
 
-        
-
 
     }
 
