@@ -12,9 +12,13 @@ import java.util.Map;
 public class Player {
 
     private Color color;
+    private String name;
+    private int armiesLeftToPlace;
     public static Map<String, GamePieceModel> gamePieces = new HashMap<String, GamePieceModel>();
 
-    private int armiesLeftToPlace;
+    public Player(String name, Color color){
+
+    }
 
     public int getAmountOfLocations() {
         return 0;
