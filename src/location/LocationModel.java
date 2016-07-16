@@ -1,10 +1,10 @@
 package location;
-
 import java.util.HashSet;
 
 /**
  * Created by simpa2k on 2016-07-16.
  */
+
 public class LocationModel {
 
     private LocationView view;
@@ -23,5 +23,6 @@ public class LocationModel {
     public String getName() {
         return name;
     }
+
 
 }
