@@ -1,4 +1,4 @@
-package Location;
+package location;
 
 import javax.swing.*;
 import java.awt.*;
@@ -24,5 +24,4 @@ public class LocationView extends JComponent {
         g.setColor(color);
         g.fillRect(200, 200, 200, 200);
     }
-
 }
