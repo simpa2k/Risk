@@ -1,7 +1,5 @@
 package window;
 
-import Location.LocationView;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.Color;
@@ -15,7 +13,7 @@ public class Window extends JFrame {
 
         setLayout(new GridLayout(2,3));
 
-        
+
 
 
     }
