@@ -20,15 +20,16 @@ public class Engine {
         this.players = players;
     }
 
-    public HashSet<LocationModel> createLocations() {
-        HashSet<LocationModel> locationModels = new HashSet<>();
+    public ArrayList<LocationView> createLocations() {
+        ArrayList<LocationView> locationViews = new ArrayList<>();
 
         for(int i = 0; i < locationNames.length; i++) {
-            LocationModel locationModel = new LocationModel(new LocationView(), locationNames[i]);
-            locationModels.add(locationModel);
+            LocationView locationView = new LocationView();
+            LocationModel locationModel = new LocationModel(locationView, locationNames[i]);
+            locationViews.add(locationView);
         }
 
-        return locationModels;
+        return locationViews;
     }
 
     public void execute() {
