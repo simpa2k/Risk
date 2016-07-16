@@ -5,7 +5,6 @@ import location.LocationModel;
 import location.LocationView;
 import player.Player;
 import java.util.ArrayList;
-import java.util.HashSet;
 
 /**
  * Created by simpa2k on 2016-07-16.
@@ -36,13 +35,25 @@ public class Engine {
     public void execute() {
         while(!(players.isEmpty()))
             for(Player player : players) {
-                Turn turn = new Turn(player);
+                Turn turn = new Turn(this, player);
                 turn.start();
             }
     }
 
     private void removePlayer(Player player) {
         players.remove(player);
+    }
+
+    protected void placeTroops() {
+
+    }
+
+    protected Player attack() {
+        return null;
+    }
+
+    protected void moveTroops() {
+
     }
 
 }

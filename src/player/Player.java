@@ -28,16 +28,4 @@ public class Player {
         armiesLeftToPlace -= amount;
     }
 
-    public void placeTroops() {
-
-    }
-
-    public Player attack() {
-        return null;
-    }
-
-    public void moveTroops() {
-        
-    }
-
 }

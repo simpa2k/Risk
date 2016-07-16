@@ -7,9 +7,11 @@ import player.Player;
  */
 public class Turn {
 
+    private Engine engine;
     private Player player;
 
-    public Turn(Player player) {
+    public Turn(Engine engine, Player player) {
+        this.engine = engine;
         this.player = player;
     }
 
@@ -24,11 +26,11 @@ public class Turn {
         int amountOfArmiesReceived = amountOfHeldLocations / 3 <= 8 ? 3 : amountOfHeldLocations / 3;
 
         player.increaseArmiesLeftToPlace(amountOfArmiesReceived);
-        player.placeTroops();
+        engine.placeTroops();
     }
 
     private void combat() {
-        Player attackedPlayer = player.attack();
+        Player attackedPlayer = engine.attack();
 
         if(attackedPlayer != null) {
             //resolve combat
@@ -37,7 +39,7 @@ public class Turn {
     }
 
     private void troopMovements() {
-        player.moveTroops();
+        engine.moveTroops();
     }
 
     private void end() {
