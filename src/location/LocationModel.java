@@ -8,17 +8,11 @@ import java.util.HashSet;
 
 public class LocationModel {
 
-    private LocationView view;
     private String name;
     private HashSet<LocationModel> neighbours = new HashSet<>();
 
     public LocationModel(String name) {
-        this.view = view;
         this.name = name;
-    }
-
-    public LocationView getView() {
-        return view;
     }
 
     public String getName() {
