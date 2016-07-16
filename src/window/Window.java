@@ -35,8 +35,8 @@ public class Window extends JFrame {
             mainPanel.add(drawLocations.get(i));
 
         }
-        sp.add(mainPanel);
-        add(sp);
+        sp = new JScrollPane(mainPanel);
+        add(sp, BorderLayout.CENTER);
 
     }
 
