@@ -20,7 +20,10 @@ public class Turn {
     }
 
     private void reinforcements() {
+        int amountOfHeldLocations = player.getAmountOfLocations();
+        int amountOfArmiesReceived = amountOfHeldLocations / 3 <= 8 ? 3 : amountOfHeldLocations / 3;
 
+        player.increaseArmiesLeftToPlace(amountOfArmiesReceived);
     }
 
     private void combat() {
