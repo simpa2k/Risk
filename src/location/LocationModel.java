@@ -1,4 +1,4 @@
-package location;
+package Location;
 
 public class LocationModel {
 }
