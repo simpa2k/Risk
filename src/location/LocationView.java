@@ -1,4 +1,4 @@
-package location;
+package Location;
 
 import javax.swing.*;
 import java.awt.*;
