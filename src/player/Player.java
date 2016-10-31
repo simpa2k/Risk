@@ -16,9 +16,9 @@ public class Player {
     private int armiesLeftToPlace;
     public static Map<String, GamePieceModel> gamePieces = new HashMap<String, GamePieceModel>();
 
-    public Player(String name, Color color){
-
-    }
+//    public Player(String name, Color color){
+//
+//    }
 
     public int getAmountOfLocations() {
         return 0;

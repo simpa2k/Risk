@@ -18,20 +18,10 @@ public class LocationView extends JComponent {
     public LocationView(Color color, LocationModel model){
         this.color = color;
         this.model = model;
-
-        setPreferredSize(new Dimension(200, 200));
-        setMinimumSize(new Dimension(200, 200));
     }
 
-    public void paintComponent(Graphics g){
-
-        int x = ((this.getHeight()) / 2);
-        int y = ((this.getWidth()) / 2);
+    public void paint(Graphics g){
         g.setColor(color);
-        g.fillRect(x, y, 200, 200);
-        g.setColor(Color.RED);
-
-        g.drawString(model.getName(), x, y);
+        g.fillRect(200, 200, 200, 200);
     }
-
 }
