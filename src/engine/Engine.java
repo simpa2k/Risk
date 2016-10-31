@@ -36,11 +36,14 @@ public class Engine {
     }
 
     public void execute() {
-        while(!(players.isEmpty()))
+
+        while(!(players.isEmpty())) {
+
             for(Player player : players) {
                 Turn turn = new Turn(player);
                 turn.start();
             }
+        }
     }
 
     private void removePlayer(Player player) {
