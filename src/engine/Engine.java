@@ -18,7 +18,9 @@ public class Engine {
     private ArrayList<Player> players;
 
     public Engine(ArrayList<Player> players) {
+        
         this.players = players;
+
     }
 
     public ArrayList<LocationView> createLocations() {
